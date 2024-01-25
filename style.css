@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left {
+    width: 25vw;
+    height: 100vh;
+    background-color: #0C0E10;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-icon {
+    flex-direction: column;
+}
+
+.icon-img {
+    width: 180px;
+    height: 180px;
+    justify-content: center;
+}
+
+.icon-img>img {
+    width: 180px;
+    height: 180px;
+}
+
+.icon-txt {
+    width: 100%;
+    flex-direction: column;
+}
+
+.normal-txt {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.colour-txt {
+    color: #FF2424;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.left-links,
+.left-blogs {
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.links-txt {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.links-item {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.links-item>ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.links-item>ol>li {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.links-item>ol>li>a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.links-item>ol>li>a:hover {
+    color: #FF2424;
+}
+
+.right {
+    width: 75vw;
+    height: 100vh;
+    background-color: #111315;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 18px;
+}
+
+.search-login {
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #191D20;
+    padding-inline: 8px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.search {
+    justify-content: center;
+    gap: 8px;
+    background-color: #272A30;
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+}
+
+.search>input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.search>input::placeholder {
+    color: #878787;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sign-up,
+.login {
+    width: 15%;
+    height: 46px;
+    justify-content: center;
+    background-color: #FF2424;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.img-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.hero {
+    width: 71vw;
+    height: 39vh;
+    justify-content: center;
+    margin-inline: 20px;
+}
+
+.hero>img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-items {
+    width: 100%;
+    height: 40vh;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 20px;
+}
+
+.menu-txt {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-contain {
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    width: 31%;
+    height: 98%;
+    border-radius: 10px;
+    background-color: #191D20;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.item-img {
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+}
+
+.item-img>img {
+    width: 95%;
+    height: 80%;
+}
+
+.item-text-icon {
+    width: 100%;
+    height: 8%;
+    justify-content: space-between;
+    padding-inline: 8px;
+}
+
+.name-price-text {
+
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+.plus-icon {
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #363A43;
+}
+
+.name {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.price {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
