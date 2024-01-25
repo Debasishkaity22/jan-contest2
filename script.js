@@ -1,4 +1,4 @@
-console.log("hi");
+
 const menuData = [];
 function getMenu() {
     return fetch('https://raw.githubusercontent.com/saksham-accio/f2_contest_3/main/food.json')
@@ -78,7 +78,6 @@ function TakeOrder() {
                     </div>
                 </div>
             `
-            console.log(menuContain);
         }, 2500);
     })
 }
@@ -99,20 +98,17 @@ function payOrder(order) {
     })
 }
 function thankyouFnc() {
-    // alert("thankyou for eating with us today!");
+    alert("thankyou for eating with us today!");
 }
 getMenu().then((menu) => {
-    console.log(menu);
     randomArray(menu);
     return TakeOrder();
 }).then((order) => {
     console.log(order);
     return orderPrep(order);
 }).then((order) => {
-    console.log(order);
     return payOrder(order);
 }).then((order) => {
-    console.log(order);
     thankyouFnc();
 }).catch((error) => {
     console.log("Error", error);
